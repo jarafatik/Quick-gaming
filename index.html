@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Mini hra</p>
+          <h1>Quick Gaming</h1>
+        </div>
+        <button id="startBtn" class="primary-btn">Začít hru</button>
+      </header>
+
+      <section class="hud">
+        <div class="stat-box">
+          <span class="label">Skóre</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="label">Čas</span>
+          <strong id="timer">30</strong>
+        </div>
+        <div class="stat-box">
+          <span class="label">Best</span>
+          <strong id="best">0</strong>
+        </div>
+      </section>
+
+      <main class="game-area" id="gameArea" aria-label="Herní plocha">
+        <div id="message" class="message visible">
+          Klikni na <strong>Začít hru</strong> a zkus překonat svůj rekord.
+        </div>
+      </main>
+
+      <aside class="ad-slot">Ad space / monetizace</aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
